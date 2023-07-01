@@ -1,0 +1,24 @@
+# GPU RAM
+gpu_mem=16
+
+# I2C 
+dtparam=i2c_arm=on
+
+# RTC
+dtoverlay=i2c-rtc,ds3231
+
+# PPS
+dtoverlay=pps-gpio,gpiopin=18
+
+# Enable watchdog
+dtparam=watchdog=on
+
+# Disable audio
+dtparam=audio=off
+
+# Disable camera
+start_x=0
+
+# Skipping boot delay and rainbow splashscreen
+boot_delay=0
+disable_splash=1
